@@ -1,9 +1,12 @@
-const assert = require('assert')
+const assert = require('assert');
+const {expect} = require('chai');
+
 const {sum, mult, isAdult, isPalindrome, isOddNumber, isEvenNumber, sortArrayUp} = require('../index.js')
 
 describe('function sum', () => {
     it('should sum equals 10', () => {
         assert.equal(sum(4, 6), 10);
+        expect(sum(2, 4)).eq(6);
     });
 
     it('should sum not equals 8', () => {
@@ -24,10 +27,12 @@ describe ('function mult', () => {
 describe('function isAdult', () => {
     it('should function IsAdult is true', () => {
         assert.equal(isAdult(18), true)
+        expect(isAdult(18)).true;
     });
 
     it('should function IsAdult is false', () => {
         assert.equal(isAdult(15), false)
+        expect(isAdult(15)).false;
     });
 });
 
