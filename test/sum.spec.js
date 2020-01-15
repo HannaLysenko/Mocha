@@ -1,5 +1,4 @@
 const {expect} = require('chai');
-
 const {sum} = require('../index.js');
 
 describe('function sum', () => {
