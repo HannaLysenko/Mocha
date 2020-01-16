@@ -1,13 +1,13 @@
-##Unit Testing Based On Mocha
+## Unit Testing Based On Mocha
 Mocha is one of the most popular Node.js testing frameworks.
 
-####Mocha Instalation
+#### Mocha Instalation
 The User should start with installing Mocha-Node module in the project’s directory. To do this, they should 
 follow the steps below:
 1. Open the terminal.
 2. Enter this command: __npm install mocha__ (if needs, change the "name" in package.json to different one(WebStorm)).
 
-####Runnig Unit Tests
+#### Runnig Unit Tests
 1. Open *index.js* file. Here, the user can create units (functions).
 
 2. Unit tests should be saved in a separate folder. For this purpose, in Mocha directory create a new "Test" directory, where create a new JS File with __"file name".spec.js__.  
@@ -33,13 +33,13 @@ describe('functionName', () => {
 
 6. For test run, the user should open the terminal and type a command __npm test__.
 
-##Unit Testing Based On Chai
+## Unit Testing Based On Chai
 Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 
-####Chai Instalation
+#### Chai Instalation
 1. Package is available through npm: __npm install chai__;
 
-####Runnig Unit Tests
+#### Runnig Unit Tests
 
 1. For test running, *index.spec.js* requires the following command: __const {expect} = require('chai');__
 
