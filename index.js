@@ -32,4 +32,11 @@ function sortArrayUp (arr){
   return arr.sort();
 }
 
-module.exports = {sum, mult, isAdult, isPalindrome, isOddNumber, isEvenNumber, sortArrayUp};
+function indexOfFirstNegative(arr){
+  for ( let i = 0; i < arr.length; i++){
+    if (arr[i] < 0) return i;
+  }
+}
+
+
+module.exports = {sum, mult, isAdult, isPalindrome, isOddNumber, isEvenNumber, sortArrayUp, indexOfFirstNegative};
