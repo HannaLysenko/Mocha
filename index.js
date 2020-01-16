@@ -20,12 +20,12 @@ function isPalindrome(str){
   return (str === newStr);
 }
 
-function isOddNumber (num){
-  return (num % 2 !== 0);
+function isOddNumber (x){
+  return (x % 2 === 1) || (x % 2 === -1) && (typeof x === 'number');
 }
 
-function isEvenNumber (num){
-  return (num % 2 === 0);
+function isEvenNumber (x){
+  return (x % 2 === 0) && (typeof x === 'number');
 }
 
 function sortArrayUp (arr){
@@ -38,5 +38,20 @@ function indexOfFirstNegative(arr){
   }
 }
 
+function arraySum (arr){
+  let n = 0;
+  for (let i = 0; i < arr.length; i++){
+    if(typeof arr[i] != 'number') return 'Array contains NaN';
+    n = n + arr[i];
+  }
+  if(arr.length == 0) return ('Array is empty');
+  else return n;
+}
 
-module.exports = {sum, mult, isAdult, isPalindrome, isOddNumber, isEvenNumber, sortArrayUp, indexOfFirstNegative};
+function valueIsNaN(v){
+  return v !== v;
+}
+
+
+
+module.exports = {sum, mult, isAdult, isPalindrome, isOddNumber, isEvenNumber, sortArrayUp, indexOfFirstNegative, arraySum, valueIsNaN};
